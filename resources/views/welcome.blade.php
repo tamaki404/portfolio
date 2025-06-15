@@ -29,26 +29,30 @@
           <div class="twoCol">
               <div class="col1">
                 <div class="introText">
-                  <h1 class="title">Heya!</h1>
+                  <h1 class="title">Hello!</h1>
                   <h1 class="name" >I'm Nicole</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fug
+                    I'm an aspiring web developer who loves turning ideas into interactive, user-friendly websites. 
+                    I'm currently exploring modern tools and frameworks to sharpen my skills.
+                    Whether it's building responsive layouts or learning something new, I enjoy every part of the process.  
+                    I'm excited to grow in this field and contribute to meaningful projects!
                   </p>
                   <div class="socials">
-                    <div class="socialButt">
+                    <button class="facebook">
                       <a href="#">
-                    </div>  
-                        <div class="socialButt">
+                    </button>                     
+                     <button class="instagram">
                       <a href="#">
-                    </div>  
-                        <div class="socialButt">
+                    </button>  
+                    <button class="discord">
                       <a href="#">
-                    </div>  
-                                            <div class="socialButt">
+                    </button>                     
+                     <button class="linkedin">
                       <a href="#">
-                    </div>  
+                    </button>  
+                  
+
+                      
                     
 
                   </div>
