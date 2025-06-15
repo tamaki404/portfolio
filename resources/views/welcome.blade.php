@@ -62,12 +62,16 @@
                 </div>
 
         
-              </div>
+              </div>   
               <div class="col2">
-                      none yet ...
-              </div>
+                    <img src="{{ asset('assets/nicoleImg1.png') }}" alt="">
+               
 
-            </div>
+        
+              </div>             
+          </div>
+
+
              
     </section>
     <section class="detailsSec">
