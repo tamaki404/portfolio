@@ -49,7 +49,10 @@
 
             </div>
             <div class="socials">
-                
+                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image" ></button>
+                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image" ></button>
+                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image"></button>
+                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image" ></button>
 
             </div>
         </div>

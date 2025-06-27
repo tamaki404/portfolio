@@ -183,3 +183,35 @@ body {
     color: #fff;
 }
 
+.socials{
+    height: 80%;
+    width: auto;
+    overflow: hidden;
+    margin-left: auto;
+    background-color: red;
+    display: flex;
+    flex-direction:column ;
+}
+
+
+
+
+
+.socials button{
+  width: 70px;
+  height: 70px;
+  background-color: pink;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  justify-content: center;
+  align-self: start;
+    
+}
+
+.socialBtn img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
