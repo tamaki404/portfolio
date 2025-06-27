@@ -10,74 +10,56 @@
     <link rel="icon" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <main class="mainCon">
     <section class="introSec">
-         <div class="directCon">
-            <button class="directButt" ><p style="font-weight: bold">About</p></button>
-            <button class="directButt"><p>Projects</p></button>
-            <button class="directButt"><p>Resume</p></button>
-            <button class="directButt"><p>Gallery</p></button>
-            <button class="directButt"><p>Contact</p></button>
-            
-         </div>
 
-          <div class="twoCol">
-              <div class="col1">
-                <div class="introText">
-                  <h1 class="title">Hello!</h1>
-                  <h1 class="name" >I'm Nicole</h1>
-                  <p>
-                    I'm an aspiring web developer who loves turning ideas into interactive, user-friendly websites. 
-                    I'm currently exploring modern tools and frameworks to sharpen my skills.
-                    Whether it's building responsive layouts or learning something new, I enjoy every part of the process.  
-                    I'm excited to grow in this field and contribute to meaningful projects!
-                  </p>
-                  <div class="socials">
-                    <button class="facebook">
-                      <a href="#">
-                    </button>                     
-                     <button class="instagram">
-                      <a href="#">
-                    </button>  
-                    <button class="discord">
-                      <a href="#">
-                    </button>                     
-                     <button class="linkedin">
-                      <a href="#">
-                    </button>  
-                  
+        <div class="logoNavbar">
+            <div class="logo">
+                <img src="{{ asset('assets/codeLogo.png') }}" alt="Code Logo">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="navbar">
+                <button>Home</button>
+                <button>About</button>
+                <button>Portfolio</button>
+                <button>Contact</button>
+             </div>
+        </div>
 
-                      
-                    
+        <div class="introCon">
+            <div class="introText">
+                <h2>Hello,</h2>
+                <h1>I'm Nicole</h1>
+                <p> < p> I’m an entry-level web developer, I’m passionate about learning, building intuitive user experiences, and contributing to meaningful projects. < /p></p>
+                <button class="dowloadBtn">Download resume</button>
 
-                  </div>
-               
+            </div>
+            <div class="introImg">
+                <img src="{{ asset('assets/togaPic_noBg.png') }}" alt="Intro Image" class="img1">
+                <img src="{{ asset('assets/filipinianaPic_noBg.png') }}" alt="Intro Image" class="img2">
 
-                  
-                </div>
+            </div>
+            <div class="socials">
+                
 
-        
-              </div>   
-              <div class="col2">
-                    <img src="{{ asset('assets/nicoleImg1.png') }}" alt="">
-               
-
-        
-              </div>             
-          </div>
-
-
+            </div>
+        </div>
              
     </section>
-    <section class="detailsSec">
-     
-
+    
+    <section class="myWorks">
+  
     </section>
+
 
 </main>
 
