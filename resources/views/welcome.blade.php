@@ -7,7 +7,13 @@
    
     <meta name="description" content="Nicole's profile page showcasing user details.">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-    <link rel="icon" href="">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-o/3eeZlF1M+gSQQfFVzM9YBl6n3Tav1AmhU5Uah5ojI5IkfuQEqyzKNkk1rJZGL8eE6OY+y/jT9G7VUguVch/w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,10 +55,10 @@
 
             </div>
             <div class="socials">
-                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image" ></button>
-                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image" ></button>
-                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image"></button>
-                <button class="socialBtn"><img src="{{ asset('assets/discordLogo.jpg') }}" alt="Intro Image" ></button>
+                <button class="socialBtn"><img src="{{ asset('assets/linkedInLogo.png') }}" alt="LinkedIn" ></button>
+                <button class="socialBtn"><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></button>
+                <button class="socialBtn"><img src="{{ asset('assets/gmailLogo.jpg') }}" alt="Gmail"></button>
+                <button class="socialBtn"><img src="{{ asset('assets/instagramLogo.jpg') }}" alt="Instagram" ></button>
 
             </div>
         </div>
