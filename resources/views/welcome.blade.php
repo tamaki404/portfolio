@@ -49,6 +49,7 @@
                 <button class="dowloadBtn"><span class="downloadIcon"><i class="fa-solid fa-arrow-down"></i> </span> Download resume</button>
 
             </div>
+            
             <div class="introImg">
                 <img src="{{ asset('assets/togaPic_noBg.png') }}" alt="Intro Image" class="img1">
                 <img src="{{ asset('assets/filipinianaPic_noBg.png') }}" alt="Intro Image" class="img2">

@@ -1,5 +1,5 @@
 body {
-    background-color: #f9f8dc;
+    background-color: #252b37;
     margin: 0;
     padding: 20px;
     height: 100vh;
@@ -168,7 +168,7 @@ body {
     width: 230px;
     padding: 10px;
     border-radius: 10px;
-    height: 40px;
+    height: 45px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -181,8 +181,42 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(53, 51, 205, 0.8)),
             url('/assets/bgFcol.jpg');
     color: #fff;
+    cursor: pointer;
     gap: 10px;
+    transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+
 }
+
+.introText button:hover {
+  animation: moveShadow 0.6s ease-in-out forwards;
+  filter: brightness(1.1);
+  z-index: 5;
+}
+
+@keyframes moveShadow {
+  0% {
+    box-shadow:
+      0 0 10px rgba(53, 51, 205, 0.6),
+      0 0 20px rgba(53, 51, 205, 0.4),
+      0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  }
+  50% {
+    box-shadow:
+      5px 5px 15px rgba(53, 51, 205, 0.6),
+      -5px -5px 20px rgba(53, 51, 205, 0.4),
+      0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  }
+  100% {
+    box-shadow:
+      0 0 10px rgba(53, 51, 205, 0.6),
+      0 0 20px rgba(53, 51, 205, 0.4),
+      0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  }
+}
+
+
 
 .downloadIcon i{
     color: #095ee5;
@@ -192,14 +226,18 @@ body {
 .socials{
     height: 80%;
     width: 65px;
-    overflow: hidden;
     margin-left: auto;
     background-color: transparent;
     display: flex;
     flex-direction:column ;
-    overflow: hidden;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
+}
+
+.socialsText{
+    display: flex;
+    flex-direction: row;
+
 }
 
 
@@ -213,8 +251,21 @@ body {
   border: none;
   justify-content: center;
   align-self: start;
+  cursor: pointer;
+  opacity: 0.6;
+      box-shadow: 0 -20px 10px -20px rgba(0,0,0,0.45) inset;
 
     
+}
+
+.socials button:hover {
+  opacity: 1;
+  transform: scale(1.1) translateY(-3px); 
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.3),
+    0 4px 10px rgba(0, 0, 0, 0.2),
+    0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  z-index: 5;
 }
 
 .socialBtn img{
