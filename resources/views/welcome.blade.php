@@ -46,7 +46,7 @@
                 <h2>Hello,</h2>
                 <h1>I'm Nicole</h1>
                 <p> < p> I’m an entry-level web developer, I’m passionate about learning, building intuitive user experiences, and contributing to meaningful projects. < /p></p>
-                <button class="dowloadBtn">Download resume</button>
+                <button class="dowloadBtn"><span class="downloadIcon"><i class="fa-solid fa-arrow-down"></i> </span> Download resume</button>
 
             </div>
             <div class="introImg">

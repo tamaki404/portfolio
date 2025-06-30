@@ -181,6 +181,12 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(53, 51, 205, 0.8)),
             url('/assets/bgFcol.jpg');
     color: #fff;
+    gap: 10px;
+}
+
+.downloadIcon i{
+    color: #095ee5;
+    font-size: 20px;
 }
 
 .socials{
@@ -217,3 +223,4 @@ body {
   object-fit: cover;      
   object-position: center;  
 }
+
