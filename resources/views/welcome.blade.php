@@ -34,7 +34,7 @@
                 <h1>Portfolio</h1>
             </div>
             <div class="navbar">
-                <button>Home</button>
+                <button style="opacity: 1;">Home</button>
                 <button>About</button>
                 <button>Portfolio</button>
                 <button>Contact</button>
@@ -46,7 +46,10 @@
                 <h2>Hello,</h2>
                 <h1>I'm Nicole</h1>
                 <p> < p> I’m an entry-level web developer, I’m passionate about learning, building intuitive user experiences, and contributing to meaningful projects. < /p></p>
-                <button class="dowloadBtn"><span class="downloadIcon"><i class="fa-solid fa-arrow-down"></i> </span> Download resume</button>
+                <a class="dowloadBtn" href="assets/nicoleTumpag_dev.pdf" download>
+                <span class="downloadIcon"><i class="fa-solid fa-arrow-down"></i></span>
+                Download resume
+                </a>
 
             </div>
             
@@ -56,7 +59,9 @@
 
             </div>
             <div class="socials">
-                <button class="socialBtn"><img src="{{ asset('assets/linkedInLogo.png') }}" alt="LinkedIn" ></button>
+                <button class="socialBtn" onclick="window.open('https://www.google.com', '_blank')">
+                <img src="{{ asset('assets/linkedInLogo.png') }}" alt="LinkedIn">
+                </button>
                 <button class="socialBtn"><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></button>
                 <button class="socialBtn"><img src="{{ asset('assets/gmailLogo.jpg') }}" alt="Gmail"></button>
                 <button class="socialBtn"><img src="{{ asset('assets/instagramLogo.jpg') }}" alt="Instagram" ></button>
@@ -67,6 +72,34 @@
     </section>
     
     <section class="myWorks">
+  
+        <div class="logoNavbar">
+            <div class="logo">
+                <h1 style="color:#095ee5">/</h1>
+                <h1 style="font-size:18px">About me</h1>
+            </div>
+            <!-- <div class="navbar">
+                <button style="opacity: 1;">Home</button>
+                <button>About</button>
+                <button>Portfolio</button>
+                <button>Contact</button>
+             </div> -->
+        </div>  
+        <div class="works">
+            <div class="leftWork">
+                <h1>I've worked on diverse projects — </h1>
+                <p>from building a cross-platform AI chat app using 
+                    React Native and OpenAI, to leading the development 
+                    of an e-commerce website and a teacher-parent monitoring system.</p>
+            </div>
+            <div class="rightWork">
+                <h1>Let’s build something great together!</h1>
+                <p>I’m detail-oriented, organized, and love solving problems. Whether it's 
+                    optimizing code, fixing bugs, or designing clean UI, I thrive in collaborative
+                     environments where I can keep learning and building meaningful tech.</p>
+            </div>
+        </div>
+
   
     </section>
 

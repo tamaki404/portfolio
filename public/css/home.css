@@ -5,7 +5,8 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: auto;  font-family: "Bricolage Grotesque", sans-serif;
+
 
 }
 
@@ -20,8 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+
     
 }
 
@@ -31,7 +31,7 @@ body {
 
     padding: 20px;
     border-radius: 25px;
-    width: 90%;
+    width: 95%;
     height: auto;
     box-shadow: 0 -20px 10px -20px rgba(0,0,0,0.45) inset;
        min-height: 600px;
@@ -82,6 +82,12 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    opacity: 0.6;
+}
+
+.logoNavbar button:hover{
+    text-decoration: underline 1.5px solid #fff;
+   text-underline-offset: 4px;
 }
 
 
@@ -164,11 +170,11 @@ body {
 
 }
 
-.introText button{
+.introText a{
     width: 230px;
     padding: 10px;
     border-radius: 10px;
-    height: 45px;
+    height: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -186,10 +192,11 @@ body {
     transition: transform 0.3s ease;
   position: relative;
   z-index: 1;
+   text-decoration: none;
 
 }
 
-.introText button:hover {
+.introText a:hover {
   animation: moveShadow 0.6s ease-in-out forwards;
   filter: brightness(1.1);
   z-index: 5;
@@ -273,5 +280,69 @@ body {
   height: 100%;
   object-fit: cover;      
   object-position: center;  
+}
+
+
+.myWorks{
+
+
+    padding: 20px;
+    border-radius: 25px;
+    width: 95%;
+    height: auto;
+       min-height: 600px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+.myWorks .works{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 80%;
+   justify-content: space-between;
+}
+
+.leftWork{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+    
+
+
+}
+
+.leftWork h1, .rightWork h1{
+    font-size: 57px;
+    font-weight: 700;
+    color: #095ee5;
+    margin: 0;
+    line-height: 0.7;
+    width: 70%;
+}
+
+.leftWork p, .rightWork p{
+    font-size: 25px;
+    line-height: 1.3;
+    margin-top: 10px;
+    width: 70%;
+    font-style: italic;
+    color: #fff;
+}
+
+.rightWork{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 100%;
+    justify-content: end;
+    align-items: start;
+
 }
 
