@@ -154,6 +154,54 @@ html {
   z-index: 1;
 }
 
+.introImg {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.introImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: z-index 0.3s ease, transform 0.3s ease;
+}
+
+.emailMe{
+   background-color: #fff;
+   z-index: 10;
+   padding: 10px;
+   color: #252b37;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 -20px 10px -20px rgba(0,0,0,0.45) inset;
+  position: absolute;
+  bottom: 180px;
+  left: 250px; 
+  font-size: 12.3px;
+  font-weight: bold;
+  width: 100px;
+  cursor: pointer;
+}
+
+.img1 {
+  z-index: 2; 
+}
+
+.img2 {
+  z-index: 1;
+}
+
+.introImg:hover .img2 {
+  z-index: 3;
+}
+
+.introImg:hover .img2 
+.introImg:hover button{
+  transform: scale(1.03);
+}
+
+
 
 .introText {
     width: 30%;

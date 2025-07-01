@@ -67,6 +67,7 @@
             </div>
             
             <div class="introImg">
+                <button class="emailMe" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=nicole.tumpag.dev@gmail.com', '_blank')">Email me</button>
                 <img src="{{ asset('assets/togaPic_noBg.png') }}" alt="Intro Image" class="img1">
                 <img src="{{ asset('assets/filipinianaPic_noBg.png') }}" alt="Intro Image" class="img2">
 
@@ -253,25 +254,25 @@
             <div class="portBox">
                 <div class="upperBoxpart">
                      <p style="font-weight: bold">2025</p>
-                     <p>Android, IOS</p>
+                     <p>Windows</p>
                        
                 </div>
                 <div class="lowerBoxpart">
-                    <h2>AI Chat App – Leyrus</h2>
-                    <p>React Native, Expo Go, OpenAI API, AdMob, Android Studio, Xcode</p>
+                    <h2>TODD: Teacher-Parent Monitoring System</h2>
+                    <p>HTML, CSS, Node.js, Express.js, MongoDB, Electron</p>
 
                 </div>
             </div>
      
             <div class="portBox">
                 <div class="upperBoxpart">
-                     <p style="font-weight: bold">2025</p>
-                     <p>Android, IOS</p>
+                     <p style="font-weight: bold">2024</p>
+                     <p>Web</p>
                        
                 </div>
                 <div class="lowerBoxpart">
-                    <h2>AI Chat App – Leyrus</h2>
-                    <p>React Native, Expo Go, OpenAI API, AdMob, Android Studio, Xcode</p>
+                    <h2> Pinoy Pride Marketplace</h2>
+                    <p>HTML, CSS, PHP, MySQL, XAMPP</p>
 
                 </div>
             </div>        
@@ -293,7 +294,7 @@
             </div>
         </div>
 
-        <button class="footerUpBtn"><i class="fa-solid fa-chevron-up"></i></button>
+        <button class="footerUpBtn" onclick="scrollToSection('home')"><i class="fa-solid fa-chevron-up"></i></button>
         
         <div class="contactCon"> 
             <div class="leftCon">
