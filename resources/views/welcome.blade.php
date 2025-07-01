@@ -37,6 +37,7 @@
              <div class="navbar">
                 <button onclick="scrollToSection('home')">Home</button>
                 <button onclick="scrollToSection('about')">About</button>
+                <button onclick="scrollToSection('techs')">Techs</button>
                 <button onclick="scrollToSection('portfolio')">Portfolio</button>
                 <button onclick="scrollToSection('contact')">Contact</button>
             </div>
@@ -180,7 +181,7 @@
   
     </section>
 
-    <section class="techStacksSec" id="portfolio">
+    <section class="techStacksSec" id="techs">
   
         <div class="logoNavbar">
             <div class="logo">
@@ -224,7 +225,7 @@
   
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
   
         <div class="logoNavbar">
             <div class="logo">
@@ -339,10 +340,11 @@
         </div>
 
         <div class="navFooter">
-            <button>Home</button>
-            <button>About</button>
-            <button>Portfolio</button>
-            <button>Contact</button>
+                <button onclick="scrollToSection('home')">Home</button>
+                <button onclick="scrollToSection('about')">About</button>
+                <button onclick="scrollToSection('techs')">Techs</button>
+                <button onclick="scrollToSection('portfolio')">Portfolio</button>
+                <button onclick="scrollToSection('contact')">Contact</button>
         </div>
 
 
