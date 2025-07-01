@@ -26,19 +26,31 @@
 <body>
 
 <main class="mainCon">
-    <section class="introSec">
+    <section class="introSec" id="home">
 
         <div class="logoNavbar">
             <div class="logo">
                 <img src="{{ asset('assets/codeLogo.png') }}" alt="Code Logo">
                 <h1>Portfolio</h1>
             </div>
-            <div class="navbar">
-                <button style="opacity: 1;">Home</button>
-                <button>About</button>
-                <button>Portfolio</button>
-                <button>Contact</button>
-             </div>
+      
+             <div class="navbar">
+                <button onclick="scrollToSection('home')">Home</button>
+                <button onclick="scrollToSection('about')">About</button>
+                <button onclick="scrollToSection('portfolio')">Portfolio</button>
+                <button onclick="scrollToSection('contact')">Contact</button>
+            </div>
+
+                <script>
+                    function scrollToSection(id) {
+                        const section = document.getElementById(id);
+                        if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                </script>
+
+
         </div>
 
         <div class="introCon">
@@ -59,12 +71,23 @@
 
             </div>
             <div class="socials">
-                <button class="socialBtn" onclick="window.open('https://www.google.com', '_blank')">
+                <button class="socialBtn" onclick="window.open('https://www.linkedin.com/in/your-username', '_blank')">
                 <img src="{{ asset('assets/linkedInLogo.png') }}" alt="LinkedIn">
                 </button>
-                <button class="socialBtn"><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></button>
-                <button class="socialBtn"><img src="{{ asset('assets/gmailLogo.jpg') }}" alt="Gmail"></button>
-                <button class="socialBtn"><img src="{{ asset('assets/instagramLogo.jpg') }}" alt="Instagram" ></button>
+
+                <button class="socialBtn" onclick="window.open('https://www.facebook.com/CarbolalaIs/', '_blank')">
+                <img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook">
+                </button>
+
+                <button class="socialBtn" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=nicole.tumpag.dev@gmail.com', '_blank')">
+                <img src="{{ asset('assets/gmailLogo.jpg') }}" alt="Gmail">
+                </button>
+
+
+
+                <button class="socialBtn" onclick="window.open('https://www.instagram.com/tamtamaki404/', '_blank')">
+                <img src="{{ asset('assets/instagramLogo.jpg') }}" alt="Instagram">
+                </button>
 
             </div>
         </div>
@@ -73,7 +96,7 @@
              
     </section>
     
-    <section class="myWorks">
+    <section class="myWorks" id="about">
   
         <div class="logoNavbar">
             <div class="logo">
@@ -103,61 +126,61 @@
         </div>
 
         <script>
-  const quotes = [
-    {
-      left: {
-        h1: "I've worked on diverse projects —",
-        p: "from building a cross-platform AI chat app using React Native and OpenAI, to leading the development of an e-commerce website and a teacher-parent monitoring system."
-      },
-      right: {
-        h1: "Let’s build something great together!",
-        p: "I’m detail-oriented, organized, and love solving problems. Whether it's optimizing code, fixing bugs, or designing clean UI, I thrive in collaborative environments where I can keep learning and building meaningful tech."
-      }
-    },
-    {
-      left: {
-        h1: "I turn ideas into usable software.",
-        p: "From chat apps to complex systems, I enjoy transforming project goals into fully functional apps with clean, reliable code and modern design principles."
-      },
-      right: {
-        h1: "Code with purpose, design with clarity.",
-        p: "My goal is to craft software that not only works—but works beautifully. I'm always up for new challenges that help me grow while building tech that matters."
-      }
-    }
-  ];
+            const quotes = [
+                {
+                left: {
+                    h1: "I've worked on diverse projects —",
+                    p: "from building a cross-platform AI chat app using React Native and OpenAI, to leading the development of an e-commerce website and a teacher-parent monitoring system."
+                },
+                right: {
+                    h1: "Let’s build something great together!",
+                    p: "I’m detail-oriented, organized, and love solving problems. Whether it's optimizing code, fixing bugs, or designing clean UI, I thrive in collaborative environments where I can keep learning and building meaningful tech."
+                }
+                },
+                {
+                left: {
+                    h1: "I turn ideas into usable software.",
+                    p: "From chat apps to complex systems, I enjoy transforming project goals into fully functional apps with clean, reliable code and modern design principles."
+                },
+                right: {
+                    h1: "Code with purpose, design with clarity.",
+                    p: "My goal is to craft software that not only works—but works beautifully. I'm always up for new challenges that help me grow while building tech that matters."
+                }
+                }
+            ];
 
-  let index = 0;
+            let index = 0;
 
-  function switchQuotes() {
-    const left = document.getElementById("leftWork");
-    const right = document.getElementById("rightWork");
+            function switchQuotes() {
+                const left = document.getElementById("leftWork");
+                const right = document.getElementById("rightWork");
 
-    left.classList.add("fade-out");
-    right.classList.add("fade-out");
+                left.classList.add("fade-out");
+                right.classList.add("fade-out");
 
-    setTimeout(() => {
-      const quoteSet = quotes[index];
-      left.innerHTML = `<h1>${quoteSet.left.h1}</h1><p>${quoteSet.left.p}</p>`;
-      right.innerHTML = `<h1>${quoteSet.right.h1}</h1><p>${quoteSet.right.p}</p>`;
+                setTimeout(() => {
+                const quoteSet = quotes[index];
+                left.innerHTML = `<h1>${quoteSet.left.h1}</h1><p>${quoteSet.left.p}</p>`;
+                right.innerHTML = `<h1>${quoteSet.right.h1}</h1><p>${quoteSet.right.p}</p>`;
 
-      left.classList.remove("fade-out");
-      right.classList.remove("fade-out");
-      left.classList.add("fade-in");
-      right.classList.add("fade-in");
+                left.classList.remove("fade-out");
+                right.classList.remove("fade-out");
+                left.classList.add("fade-in");
+                right.classList.add("fade-in");
 
-      index = (index + 1) % quotes.length;
-    }, 1000); 
-  }
+                index = (index + 1) % quotes.length;
+                }, 1000); 
+            }
 
-  setInterval(switchQuotes, 4000);
-</script>
+            setInterval(switchQuotes, 4000);
+        </script>
 
 
 
   
     </section>
 
-    <section class="techStacksSec">
+    <section class="techStacksSec" id="portfolio">
   
         <div class="logoNavbar">
             <div class="logo">
@@ -260,7 +283,7 @@
   
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
   
         <div class="logoNavbar">
             <div class="logo">
@@ -281,11 +304,20 @@
                         <h1>Nicole Tumpag</h1>
                         <h2>Web developer</h2>
                         <div class="endIcon">
-                            <span><img src="{{ asset('assets/linkedInLogo.png') }}" alt="Facebook" ></span>
-                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
-                            <span><img src="{{ asset('assets/gmailLogo.jpg') }}" alt="Facebook" ></span>
-                            <span><img src="{{ asset('assets/instagramLogo.jpg') }}" alt="Facebook" ></span>
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <img src="{{ asset('assets/linkedInLogo.png') }}" alt="LinkedIn">
+                            </a>
+                            <a href="https://www.facebook.com/CarbolalaIs/" target="_blank" rel="noopener noreferrer">
+                                <img src="{{ asset('assets/facebookLogo.jpg') }}" alt="LinkedIn">
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nicole.tumpagdev@gmail.com" target="_blank" rel="noopener noreferrer">
+                                  <img src="{{ asset('assets/gmailLogo.jpg') }}" alt="Gmail">
+                            </a>
 
+                            <a href="https://www.instagram.com/tamtamaki404/" target="_blank" rel="noopener noreferrer">
+                                <img src="{{ asset('assets/instagramLogo.jpg') }}" alt="LinkedIn">
+                            </a>                                                        
+                           
                         </div>
                     </div>
                 </div>
