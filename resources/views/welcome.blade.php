@@ -88,19 +88,71 @@
              </div> -->
         </div>  
         <div class="works">
-            <div class="leftWork">
-                <h1>I've worked on diverse projects — </h1>
-                <p>from building a cross-platform AI chat app using 
-                    React Native and OpenAI, to leading the development 
-                    of an e-commerce website and a teacher-parent monitoring system.</p>
-            </div>
-            <div class="rightWork">
-                <h1>Let’s build something great together!</h1>
-                <p>I’m detail-oriented, organized, and love solving problems. Whether it's 
-                    optimizing code, fixing bugs, or designing clean UI, I thrive in collaborative
-                     environments where I can keep learning and building meaningful tech.</p>
-            </div>
+        <div class="leftWork" id="leftWork">
+            <h1>I've worked on diverse projects — </h1>
+            <p>from building a cross-platform AI chat app using 
+            React Native and OpenAI, to leading the development 
+            of an e-commerce website and a teacher-parent monitoring system.</p>
         </div>
+        <div class="rightWork" id="rightWork">
+            <h1>Let’s build something great together!</h1>
+            <p>I’m detail-oriented, organized, and love solving problems. Whether it's 
+            optimizing code, fixing bugs, or designing clean UI, I thrive in collaborative
+            environments where I can keep learning and building meaningful tech.</p>
+        </div>
+        </div>
+
+        <script>
+  const quotes = [
+    {
+      left: {
+        h1: "I've worked on diverse projects —",
+        p: "from building a cross-platform AI chat app using React Native and OpenAI, to leading the development of an e-commerce website and a teacher-parent monitoring system."
+      },
+      right: {
+        h1: "Let’s build something great together!",
+        p: "I’m detail-oriented, organized, and love solving problems. Whether it's optimizing code, fixing bugs, or designing clean UI, I thrive in collaborative environments where I can keep learning and building meaningful tech."
+      }
+    },
+    {
+      left: {
+        h1: "I turn ideas into usable software.",
+        p: "From chat apps to complex systems, I enjoy transforming project goals into fully functional apps with clean, reliable code and modern design principles."
+      },
+      right: {
+        h1: "Code with purpose, design with clarity.",
+        p: "My goal is to craft software that not only works—but works beautifully. I'm always up for new challenges that help me grow while building tech that matters."
+      }
+    }
+  ];
+
+  let index = 0;
+
+  function switchQuotes() {
+    const left = document.getElementById("leftWork");
+    const right = document.getElementById("rightWork");
+
+    left.classList.add("fade-out");
+    right.classList.add("fade-out");
+
+    setTimeout(() => {
+      const quoteSet = quotes[index];
+      left.innerHTML = `<h1>${quoteSet.left.h1}</h1><p>${quoteSet.left.p}</p>`;
+      right.innerHTML = `<h1>${quoteSet.right.h1}</h1><p>${quoteSet.right.p}</p>`;
+
+      left.classList.remove("fade-out");
+      right.classList.remove("fade-out");
+      left.classList.add("fade-in");
+      right.classList.add("fade-in");
+
+      index = (index + 1) % quotes.length;
+    }, 1000); 
+  }
+
+  setInterval(switchQuotes, 4000);
+</script>
+
+
 
   
     </section>
@@ -221,7 +273,7 @@
         
         <div class="contactCon"> 
             <div class="leftCon">
-                                    <h2>If you have any questions, please don't hesitate to contact me</h2>
+                <h2>If you have any questions, please don't hesitate to contact me</h2>
 
                 <div class="nicoleDeets">
                     <img src="{{ asset('assets/nicole-Bg.jpg') }}" class="nicoleImg" alt="Image">
@@ -229,10 +281,10 @@
                         <h1>Nicole Tumpag</h1>
                         <h2>Web developer</h2>
                         <div class="endIcon">
+                            <span><img src="{{ asset('assets/linkedInLogo.png') }}" alt="Facebook" ></span>
                             <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
-                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
-                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
-                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
+                            <span><img src="{{ asset('assets/gmailLogo.jpg') }}" alt="Facebook" ></span>
+                            <span><img src="{{ asset('assets/instagramLogo.jpg') }}" alt="Facebook" ></span>
 
                         </div>
                     </div>

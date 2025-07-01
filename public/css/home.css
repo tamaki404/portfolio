@@ -374,6 +374,36 @@ body {
 
 }
 
+
+.works {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 60px 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.leftWork, .rightWork {
+  flex: 1;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+
+
+
+
+
+
 .techStacksSec{
 
 
@@ -535,13 +565,43 @@ body {
 
 .leftCon h2{
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px;
   width: 70%;
   display: flex;
   justify-self: center;
   font-family: "Bricolage Grotesque", sans-serif;
 }
+.techStacks h2 {
+  position: relative;
+  font-weight: bold;
+  color: #ccc; 
+  background: linear-gradient(
+    120deg,
+    #d7d7d7 0%,
+    #8e9eab 20%,
+    #e8e8e8 40%,
+    #b0bec5 60%,
+    #90a4ae 80%,
+    #d7d7d7 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: titaniumSheen 4s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes titaniumSheen {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
 
 .footerUpBtn{
    border-radius: 50%;
@@ -552,7 +612,9 @@ body {
   justify-content: center;
   align-items: center;
   justify-self: center;
-  box-shadow: 0 -20px 10px -20px rgba(0,0,0,0.45) inset;
+  cursor: pointer;
+  background-color: transparent;
+
 }
 
 .footerUpBtn i{
@@ -697,6 +759,7 @@ body {
   font-size: 16px;
   transition: background-color 0.3s ease;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .navFooter button:hover{
