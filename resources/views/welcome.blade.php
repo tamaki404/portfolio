@@ -68,6 +68,8 @@
 
             </div>
         </div>
+
+        <!-- <button class="scrollDown">  <i class="fa-solid fa-chevron-down"></i></button> -->
              
     </section>
     
@@ -103,6 +105,169 @@
   
     </section>
 
+    <section class="techStacksSec">
+  
+        <div class="logoNavbar">
+            <div class="logo">
+                <h1 style="color:#095ee5">/</h1>
+                <h1 style="font-size:18px">Tech Stacks</h1>
+            </div>
+            <!-- <div class="navbar">
+                <button style="opacity: 1;">Home</button>
+                <button>About</button>
+                <button>Portfolio</button>
+                <button>Contact</button>
+             </div> -->
+        </div>  
+
+        <div class="techStacks">
+            <h2>HTML</h2>
+            <h2>CSS</h2>
+            <h2>JavaScript</h2>
+            <h2>PHP</h2>
+            <h2>Laravel</h2>
+            <h2>Express</h2>
+            <h2>React Native</h2>
+            <h2>MySQL</h2>
+            <h2>Git</h2>
+            <h2>GitHub</h2>
+            <h2>Open AI</h2>
+            <h2>MongoDB</h2>
+            <h2>Firebase Firestore</h2>
+            <h2>Android Studio</h2>
+            <h2>Tailwind</h2>
+            <h2>Electron</h2>
+            <h2>XAMPP</h2>
+            <h2>Expo Go</h2>
+        
+
+
+
+        </div>
+
+
+  
+    </section>
+
+    <section class="portfolio">
+  
+        <div class="logoNavbar">
+            <div class="logo">
+                <h1 style="color:#095ee5">/</h1>
+                <h1 style="font-size:18px">Portfolio</h1>
+            </div>
+        </div>  
+
+        <h2>Check out some of my recent projects</h2>
+
+        <div class="portCon">
+            <div class="portBox">
+                <div class="upperBoxpart">
+                     <p style="font-weight: bold">2025</p>
+                     <p>Android, IOS</p>
+                       
+                </div>
+                <div class="lowerBoxpart">
+                    <h2>AI Chat App – Leyrus</h2>
+                    <p>React Native, Expo Go, OpenAI API, AdMob, Android Studio, Xcode</p>
+
+                </div>
+            </div>
+
+            <div class="portBox">
+                <div class="upperBoxpart">
+                     <p style="font-weight: bold">2025</p>
+                     <p>Android, IOS</p>
+                       
+                </div>
+                <div class="lowerBoxpart">
+                    <h2>AI Chat App – Leyrus</h2>
+                    <p>React Native, Expo Go, OpenAI API, AdMob, Android Studio, Xcode</p>
+
+                </div>
+            </div>
+     
+            <div class="portBox">
+                <div class="upperBoxpart">
+                     <p style="font-weight: bold">2025</p>
+                     <p>Android, IOS</p>
+                       
+                </div>
+                <div class="lowerBoxpart">
+                    <h2>AI Chat App – Leyrus</h2>
+                    <p>React Native, Expo Go, OpenAI API, AdMob, Android Studio, Xcode</p>
+
+                </div>
+            </div>        
+
+
+
+        </div>
+
+
+  
+    </section>
+
+    <section class="contact">
+  
+        <div class="logoNavbar">
+            <div class="logo">
+                 <h1 style="color:#095ee5">/</h1>
+                <h1 style="font-size:18px">Contact me</h1>
+            </div>
+        </div>
+
+        <button class="footerUpBtn"><i class="fa-solid fa-chevron-up"></i></button>
+        
+        <div class="contactCon"> 
+            <div class="leftCon">
+                                    <h2>If you have any questions, please don't hesitate to contact me</h2>
+
+                <div class="nicoleDeets">
+                    <img src="{{ asset('assets/nicole-Bg.jpg') }}" class="nicoleImg" alt="Image">
+                    <div class="details">
+                        <h1>Nicole Tumpag</h1>
+                        <h2>Web developer</h2>
+                        <div class="endIcon">
+                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
+                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
+                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
+                            <span><img src="{{ asset('assets/facebookLogo.jpg') }}" alt="Facebook" ></span>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="rightCon">
+                <div class="contactBox">
+                    <h1>Get in touch</h1>
+                    <p>nicole.tumpagdev@gmail.com</p>
+                    <p>+639125758529</p>
+                    <p style="color: #fff; font-weight: bold; margin-top: 10px;"> Montalban, Rizal, Philippines</p>
+                </div>
+
+
+            </div>
+
+        
+        </div>
+
+        <div class="navFooter">
+            <button>Home</button>
+            <button>About</button>
+            <button>Portfolio</button>
+            <button>Contact</button>
+        </div>
+
+
+        
+
+       
+
+  
+    </section>
 
 </main>
 
