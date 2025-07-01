@@ -239,17 +239,19 @@
 
         <div class="portCon">
             <div class="portBox">
+
                 <div class="upperBoxpart">
                      <p style="font-weight: bold">2025</p>
                      <p>Android, IOS</p>
-                       
                 </div>
+
                 <div class="lowerBoxpart">
                     <h2>AI Chat App – Leyrus</h2>
                     <p>React Native, Expo Go, OpenAI API, AdMob, Android Studio, Xcode</p>
 
                 </div>
             </div>
+            
 
             <div class="portBox">
                 <div class="upperBoxpart">
