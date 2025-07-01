@@ -240,6 +240,9 @@
         <div class="portCon">
             <div class="portBox">
 
+              <img src="{{ asset('assets/phone.png') }}" class="backgroundImage" alt="background" />
+
+
                 <div class="upperBoxpart">
                      <p style="font-weight: bold">2025</p>
                      <p>Android, IOS</p>
@@ -254,6 +257,8 @@
             
 
             <div class="portBox">
+              <img src="{{ asset('assets/toddHomepage.png') }}" class="backgroundImage" alt="background" />
+
                 <div class="upperBoxpart">
                      <p style="font-weight: bold">2025</p>
                      <p>Windows</p>
@@ -267,6 +272,8 @@
             </div>
      
             <div class="portBox">
+              <img src="{{ asset('assets/craftedHeritage.jpeg') }}" class="backgroundImage" alt="background" />
+
                 <div class="upperBoxpart">
                      <p style="font-weight: bold">2024</p>
                      <p>Web</p>
